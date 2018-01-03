@@ -68,8 +68,8 @@ def yorumDuzelt(yorum, zemberek):
 # https://apps.twitter.com/app/new adresinden yeni bir uygulama oluşturup gerekli anahtarları elde
 # edebilirsiniz.
 def initTwitterAPI():    
-    auth = tweepy.OAuthHandler("WhB0ZbVImPLdsr5XXTjyy0fIp", "1bwBprcnYVNVyEYyCI20OO5cugbWUlVmkQ4322acfYL1g6Fisn")
-    auth.set_access_token("317070831-od04c2LJfGvVpCkyiR3VQhLF0k6sErymFYBK5WO3", "dNR3Nym9H24N3vnYbk8l3wkZDtbuH5zoE8Ro4nsMwjgZj")
+    auth = tweepy.OAuthHandler("consumer_key", "consumer_secret")
+    auth.set_access_token("access_token", "access_token_secret")
     api = tweepy.API(auth)
     return api
 
